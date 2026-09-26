@@ -2,10 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 import NewsletterForm from "./NewsletterForm";
-
-const WHATSAPP_LINK = "https://wa.me/15058006451";
 
 const LINK_COLUMNS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -92,7 +89,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ── Social + support row ──────────────────────────────────────── */}
+      {/* ── Social row ───────────────────────────────────────────────── */}
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
         <div className="py-7 border-t border-hairline flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-6">
@@ -109,15 +106,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[13px] text-ink-soft hover:text-ink transition-colors"
-          >
-            <MessageCircle className="w-4 h-4" strokeWidth={1.5} />
-            Questions about an order? WhatsApp support
-          </a>
         </div>
       </div>
 
